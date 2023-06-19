@@ -104,6 +104,7 @@ public class SearchService {
     // keyword에 unique를 잡고 해당 데이터 중복 에러 발생시 update 진행
     public void updateKeywordCnt(String keyword) {
         try {
+
             SearchCntBaseEntity searchCntBaseEntity = new SearchCntBaseEntity()
                     .setKeyword(keyword)
                     .setCnt(1L);

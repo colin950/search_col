@@ -20,7 +20,9 @@ public interface SearchCntBaseRepository extends JpaRepository<SearchCntBaseEnti
             "where scb.keyword =:keyword ", nativeQuery = true)
     int updateSearchCnt(@Param("keyword") String keyword);
 
-    @Query(value = "select sgb.* from search_cnt_base sgb " +
-            "order by cnt desc limit :limit ", nativeQuery = true)
-    List<SearchCntBaseEntity> findByKeyword(@Param("limit") int limit);
+//    @Query(value = "select sgb.* from search_cnt_base sgb " +
+//            "order by cnt desc limit :limit ", nativeQuery = true)
+//    List<SearchCntBaseEntity> findByKeyword(@Param("limit") int limit);
+
+//    List<SearchCntBaseEntity> findByKeyword
 }
